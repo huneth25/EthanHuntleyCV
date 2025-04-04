@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: EthanHuntleyCV
-    runtime: dotnet
-    buildCommand: dotnet publish EthanHuntleyCV.csproj -c Release -o ./publish
-    startCommand: dotnet EthanHuntleyCV.dll
-    env: dotnet
-    plan: free # or starter for production
-    branch: main # your GitHub branch

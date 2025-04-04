@@ -1,0 +1,29 @@
+name: Deploy to Render
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '5.0'  # Use your version here (e.g., 5.0 or 6.0)
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Publish the application
+      run: dotnet publish -c Release -o ./publish
+
+    - name: Deploy to Render
+      run: |
+        curl -fsSL https://render.com/deploy/github-action | bash
