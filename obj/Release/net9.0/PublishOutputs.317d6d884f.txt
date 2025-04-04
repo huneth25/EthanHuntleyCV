@@ -1,0 +1,10 @@
+C:\Users\Ethan\source\repos\EthanHuntleyCV\EthanHuntleyCV\obj\Release\net9.0\PubTmp\Out\EthanHuntleyCV.exe
+C:\Users\Ethan\source\repos\EthanHuntleyCV\EthanHuntleyCV\obj\Release\net9.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Ethan\source\repos\EthanHuntleyCV\EthanHuntleyCV\obj\Release\net9.0\PubTmp\Out\appsettings.json
+C:\Users\Ethan\source\repos\EthanHuntleyCV\EthanHuntleyCV\obj\Release\net9.0\PubTmp\Out\EthanHuntleyCV.dll
+C:\Users\Ethan\source\repos\EthanHuntleyCV\EthanHuntleyCV\obj\Release\net9.0\PubTmp\Out\EthanHuntleyCV.deps.json
+C:\Users\Ethan\source\repos\EthanHuntleyCV\EthanHuntleyCV\obj\Release\net9.0\PubTmp\Out\EthanHuntleyCV.runtimeconfig.json
+C:\Users\Ethan\source\repos\EthanHuntleyCV\EthanHuntleyCV\obj\Release\net9.0\PubTmp\Out\EthanHuntleyCV.pdb
+C:\Users\Ethan\source\repos\EthanHuntleyCV\EthanHuntleyCV\obj\Release\net9.0\PubTmp\Out\BouncyCastle.Cryptography.dll
+C:\Users\Ethan\source\repos\EthanHuntleyCV\EthanHuntleyCV\obj\Release\net9.0\PubTmp\Out\MailKit.dll
+C:\Users\Ethan\source\repos\EthanHuntleyCV\EthanHuntleyCV\obj\Release\net9.0\PubTmp\Out\MimeKit.dll
