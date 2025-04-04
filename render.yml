@@ -1,9 +1,20 @@
 services:
-  - type: web
-    name: EthanHuntleyCV
-    runtime: dotnet
-    buildCommand: dotnet publish EthanHuntleyCV.csproj -c Release -o ./publish
-    startCommand: dotnet EthanHuntleyCV.dll
+  - name: ethan-huntley-cv
+    type: web
     env: dotnet
-    plan: free # or starter for production
-    branch: main # your GitHub branch
+    buildCommand: |
+      apt-get update && apt-get install -y libssl-dev  # Install OpenSSL for .NET dependencies
+      dotnet restore  # Restore dependencies
+      dotnet publish -c Release -o ./publish  # Publish the app to the 'publish' directory
+    startCommand: dotnet ./publish/EthanHuntleyCV.dll  # Start the app
+    envVars:
+      - key: SMTP_HOST
+        value: smtp.prodserver.com
+      - key: SMTP_PORT
+        value: '587'
+      - key: SMTP_USERNAME
+        value: your-email@example.com
+      - key: SMTP_PASSWORD
+        value: your-email-password
+      - key: SENDER_EMAIL
+        value: ethan.huntley@gmail.com
